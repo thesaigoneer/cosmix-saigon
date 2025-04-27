@@ -45,7 +45,7 @@ Then install a browser (Brave, Firefox, Librewolf, Vivaldi, Zen) to get your bas
 
          flatpak install "your favorite browser"
 
-Flathub (https://flathub.org/) is our 'software store', where you look for, find and install additional applications from.
+Flathub (https://flathub.org/) is our 'software store', where you look for and find additional applications. They have to be installed from the terminal.
 
 ### Homebrew 
 
@@ -55,7 +55,7 @@ First install Homebrew by running this script:
 
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-Closely follow the next steps in the terminal, as stated on-screen after install. The mentioned 'development-tools' are already included in Obelix.
+Closely follow the next steps in the terminal, as stated on-screen after install. The mentioned 'development-tools' are already included in Cosmix.
 
 More information about Homebrew can be found at https://brew.sh/
 
