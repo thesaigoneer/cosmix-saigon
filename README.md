@@ -6,13 +6,13 @@ With the upcoming release of alpha 7 of Cosmic DE and the addition to the Fedora
 
 The Universal Blue project (https://universal-blue.org/) provides a number of excellent images to start off with. They include codecs, printing support, homebrew for all your cli wishes, distrobox etc. out of the box. 
 
-I always use the latest branch, so updates will arrive automagically. Htop and vim are already included in this base image. For all cli tooling I now refer to Homebrew, for which the prequisites are added to the image by me. 
+I always use the latest branch, so updates will arrive automagically. Htop and vim are already included in this base image. For all cli tooling I now refer to Homebrew, for which the prequisites are added to the image by me. I did add zsh and fish, to facilitate easy switching to your personal shell.
 
 Secondly, I have removed the Cosmic store, editor and media player. They (or better alternatives) can be installed as flatpak's, i.e. Zed and Cosmic tweaks.
 
--        Added for Homebrew:
-         procps-ng curl file git
-         group development-tools
+-        Added for Homebrew:                      Added:
+         procps-ng curl file git                  zsh, zsh-completions         
+         group development-tools                  fish
                                                                    
          Removed:
          firefox
