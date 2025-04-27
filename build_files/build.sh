@@ -6,7 +6,7 @@ dnf5 group install -y development-tools
 dnf5 install -y  procps-ng curl file git
 
 dnf5 install -y zsh
-dnf5 install -y zsh-completions
+dnf5 install -y zsh-autosuggestions
 dnf5 install -y fish
 
 dnf5 remove -y firefox
