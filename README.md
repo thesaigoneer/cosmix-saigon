@@ -13,7 +13,7 @@ Secondly, I have removed the Cosmic store, editor and media player. They (or bet
 -        Added for Homebrew:                      Added:
          procps-ng curl file git                  zsh, zsh-completions         
          group development-tools                  fish
-                                                                   
+                                                  opendoas                 
          Removed:
          firefox
          nvtop
@@ -35,7 +35,7 @@ Log in again and switch to the signed image:
     
 Welcome to Cosmix-Saigon!
 
-### First things first:
+### Flatpak
 
 Now you have an Ublue base image install, based on Fedora, so there's no Flathub enabled ootb. Let's rectify that first:
 
@@ -58,6 +58,10 @@ First install Homebrew by running this script:
 Closely follow the next steps in the terminal, as stated on-screen after install. The mentioned 'development-tools' are already included in Cosmix.
 
 More information about Homebrew can be found at https://brew.sh/
+
+### Distrobox
+
+Don't forget there's also a fully functioning distrobox included in the image. More information on that over here: https://distrobox.it/
 
 Enjoy your freshly installed Cosmix-Saigon!
 
