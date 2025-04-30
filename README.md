@@ -63,7 +63,8 @@ More information about Homebrew can be found at https://brew.sh/
 
 Don't forget there's also a fully functioning distrobox included in the image. More information on that over here: https://distrobox.it/
 
-Enjoy your freshly installed Cosmix-Saigon!
+
+### Enjoy your freshly installed Cosmix-Saigon!
 
 --------------
 ### Yada yada
@@ -71,6 +72,6 @@ Enjoy your freshly installed Cosmix-Saigon!
 Feel free to use these builds and dots. I do not, however, offer or imply any form of support or ongoing maintenance. And of course, you use them entirely at your own risk. Have fun!
 
 
-27-04-2025
+30-04-2025
 
 
