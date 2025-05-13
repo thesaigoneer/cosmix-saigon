@@ -69,7 +69,6 @@ in
     sudo
     gnome-software
     gnome-calculator
-    gnome-calendar
     gnome-screenshot
     flatpak
     xdg-desktop-portal
