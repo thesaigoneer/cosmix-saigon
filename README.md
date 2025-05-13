@@ -3,7 +3,8 @@
 First steps:
 
 nix-channel --add https://channels.nixos.org/nixos-unstable nixos
-You can then upgrade NixOS to the latest version in your chosen channel by running
+
+You can then upgrade NixOS to the latest version in your chosen channel by running:
 
 nixos-rebuild switch --upgrade
 
