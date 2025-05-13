@@ -1,4 +1,12 @@
+### Do not rebase to this; in dev 13-05-2025
+
 ![nixbook os logo](https://github.com/user-attachments/assets/8511e040-ebf0-4090-b920-c051b23fcc9c)
+
+
+nix-channel --add https://channels.nixos.org/nixos-unstable nixos
+You can then upgrade NixOS to the latest version in your chosen channel by running
+
+nixos-rebuild switch --upgrade
 
 **Convert your old computer (even chromebook) to a user friendly, lightweight, durable, and auto updating operating system build on top of NixOS.**
 
