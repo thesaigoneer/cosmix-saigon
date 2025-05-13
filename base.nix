@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 let
-  nixChannel = "https://nixos.org/channels/nixos-24.11"; 
+  nixChannel = "https://nixos.org/channels/nixos-unstable"; 
 
   ## Notify Users Script
   notifyUsersScript = pkgs.writeScript "notify-users.sh" ''
@@ -43,7 +43,9 @@ in
   systemd.extraConfig = ''
     DefaultTimeoutStopSec=10s
   '';
-
+  # Kernel
+  boot.kernelPackages =  pkgs.linuxPackages_latest;
+  
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
@@ -62,7 +64,6 @@ in
 
   environment.systemPackages = with pkgs; [
     git
-    firefox
     libnotify
     gawk
     gnugrep
@@ -70,6 +71,7 @@ in
     gnome-software
     gnome-calculator
     gnome-screenshot
+    ptyxis
     flatpak
     xdg-desktop-portal
     xdg-desktop-portal-gtk
