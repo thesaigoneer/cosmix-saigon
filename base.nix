@@ -46,14 +46,11 @@ in
   # Kernel
   boot.kernelPackages =  pkgs.linuxPackages_latest;
   
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable the Cinnamon Desktop Environment.
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.cinnamon.enable = true;
-  xdg.portal.enable = true;
-
+# Cosmic Desktop Environment.
+  services.displayManager.cosmic-greeter.enable = true;
+  services.desktopManager.cosmic.xwayland.enable = true;
+  services.desktopManager.cosmic.enable = true;
+  
   # Enable Printing
   services.printing.enable = true;
   services.avahi = {
@@ -63,20 +60,18 @@ in
   };
 
   environment.systemPackages = with pkgs; [
+    cosmic-ext-tweaks
     git
     libnotify
     gawk
     gnugrep
     sudo
-    gnome-software
-    gnome-calculator
-    gnome-screenshot
-    ptyxis
+    fastfetch
     flatpak
+    htop
+    vim
     xdg-desktop-portal
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-gnome
-    system-config-printer
+    xdg-desktop-portal-cosmic
   ];
 
   services.flatpak.enable = true;
