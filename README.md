@@ -1,4 +1,4 @@
-### Cosmix-Saigon
+## Cosmix-Saigon
 
 In my series of composables I introduce Cosmix Saigon, NixOS with the Cosmic DE on top. 
 
@@ -11,29 +11,14 @@ It's goal is to create a "chromebook like" unbreakable computer to give to basic
 
 Cosmix Saigon is more aimed at the intermediate to experienced user, using the Cosmic desktop environment, changing channels and using the latest kernel.
 
-## First steps:
 
+### Step 1:  Install NixOS, and choose the No Desktop option.
 
+### Step 2:  Enable unfree software
 
-![Screenshot from 2024-10-22 10-31-24](https://github.com/user-attachments/assets/53fc76ad-5861-46d8-895a-b4be1e1b2816)
+### Step 3:  Format your drive however you like (erase disk, swap, no hibernate)
 
-
-## Step 1:  Install NixOS, and choose the No Desktop option.
-
-![Screenshot from 2024-10-12 10-24-21](https://github.com/user-attachments/assets/865760ec-fcd1-4133-be35-5fb5cf0e6638)
-
-
-## Step 2:  Enable unfree software
-
-![Screenshot from 2024-10-12 10-24-31](https://github.com/user-attachments/assets/77b02843-4c3e-409c-82dc-7579578b2582)
-
-
-## Step 3:  Format your drive however you like (erase disk, swap, no hibernate)
-
-![Screenshot from 2024-10-12 10-24-44](https://github.com/user-attachments/assets/968111d9-c018-4be5-8aaa-ee5c647b2617)
-
-
-## Step 4:  Reboot, login, and connect to wifi, then hit ESC
+### Step 4:  Reboot, login, and connect to wifi, then hit ESC
 
 ```
 nmtui
