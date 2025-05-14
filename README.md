@@ -43,7 +43,7 @@ You can then upgrade NixOS to the latest version in your chosen channel by runni
 
 Reboot & login again
 
-##3 Step 6:  Go to /etc and nix-shell git
+### Step 6:  Go to /etc and nix-shell git
 ```
 cd /etc/
 nix-shell -p git
