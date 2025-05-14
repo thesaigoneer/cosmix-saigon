@@ -2,7 +2,7 @@ echo "This will delete ALL local files and convert this machine to a Nixbook!";
 read -p "Do you want to continue? (y/n): " answer
 
 if [[ "$answer" =~ ^[Yy]$ ]]; then
-  echo "Installing NixBook..."
+  echo "Installing Cosmix-Saigon..."
 
   # Set up local files
   rm -rf ~/
@@ -36,5 +36,5 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   
   reboot
 else
-  echo "Nixbook Install Cancelled!"
+  echo "Cosmix-Saigon Install Cancelled!"
 fi
