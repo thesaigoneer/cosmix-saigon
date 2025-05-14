@@ -13,7 +13,6 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   mkdir ~/.local
   mkdir ~/.local/share
   cp -R /etc/cosmix-saigon/config/config ~/.config
-  cp /etc/cosmix-saigon/config/desktop/* ~/Desktop/
   cp -R /etc/cosmix-saigon/config/applications ~/.local/share/applications
 
   # The rest of the install should be hands off
