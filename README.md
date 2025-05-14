@@ -12,18 +12,26 @@ It's goal is to create a "chromebook like" unbreakable computer to give to basic
 Cosmix Saigon is more aimed at the intermediate to experienced user, using the Cosmic desktop environment, changing channels and using the latest kernel.
 
 
-### Step 1:  Install NixOS, and choose the No Desktop option.
+### Step 1:  
+        
+        Install NixOS, and choose the No Desktop option.
 
-### Step 2:  Enable unfree software
+### Step 2:  
 
-### Step 3:  Format your drive however you like (erase disk, swap, no hibernate)
+        Enable unfree software
 
-### Step 4:  Reboot, login, and connect to wifi, then hit ESC
+### Step 3:  
+
+        Format your drive however you like (erase disk, swap, no hibernate)
+
+### Step 4:  
+
+        Reboot, login, and connect to wifi, then hit ESC
 
 ```
 nmtui
 ```
-## Step 5
+### Step 5:
 
 To get the latest version of Cosmic and the kernel we have to switch channel:
 
