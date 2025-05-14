@@ -43,26 +43,25 @@ You can then upgrade NixOS to the latest version in your chosen channel by runni
 
 Reboot & login again
 
-## Step 6:  Go to /etc and nix-shell git
+##3 Step 6:  Go to /etc and nix-shell git
 ```
 cd /etc/
 nix-shell -p git
 ```
 
 
-## Step 7:  Clone the nixbook repo  (make sure you run as sudo and you're in /etc!)
+### Step 7:  Clone the nixbook repo  (make sure you run as sudo and you're in /etc!)
 ```
 sudo git clone https://github.com/thesaigoneer/cosmix-saigon
 ```
 
-## Step 8:  Run the install script (run this with NO sudo)
+### Step 8:  Run the install script (run this with NO sudo)
 ```
 cd cosmix-saigon
 ./install.sh
 ```
 
-
-## Step 9:  Enjoy Cosmix Saigon!
+### Step 9:  Enjoy Cosmix Saigon!
 
 You can always manually run updates by running **Update and Reboot** in the menu.
 
