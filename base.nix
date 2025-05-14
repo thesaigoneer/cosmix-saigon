@@ -51,12 +51,6 @@ in
   services.desktopManager.cosmic.xwayland.enable = true;
   services.desktopManager.cosmic.enable = true;
   
-  # GTK themes in Wayland
-  programs.dconf.enable = true;
-
-  # Enable firewall
-  networking.firewall.enable = true;
-  
   # Enable Printing
   services.printing.enable = true;
   services.avahi = {
@@ -93,11 +87,7 @@ in
    };
   };
   
-  # Shorten shutdown timer  
-  systemd.extraConfig = ''
-    DefaultTimeoutStopSec=5s
-  '';
-  
+
   # Auto update config, flatpak and channel
   systemd.timers."auto-update-config" = {
   wantedBy = [ "timers.target" ];
