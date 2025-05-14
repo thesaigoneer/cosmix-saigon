@@ -14,9 +14,9 @@ echo "Powerwashing NixBook..."
   mkdir ~/Pictures
   mkdir ~/.local
   mkdir ~/.local/share
-  cp -R /etc/nixbook/config/config ~/.config
-  cp /etc/nixbook/config/desktop/* ~/Desktop/
-  cp -R /etc/nixbook/config/applications ~/.local/share/applications
+  cp -R /etc/cosmix-saigon/config/config ~/.config
+  cp /etc/cosmix-saigon/desktop/* ~/Desktop/
+  cp -R /etc/cosmix-saigon/config/applications ~/.local/share/applications
 
   sudo rm -r /var/lib/flatpak
 
@@ -27,13 +27,10 @@ echo "Powerwashing NixBook..."
 
   # Add flathub and some apps
   sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-  flatpak install flathub com.google.Chrome -y
-  flatpak install flathub us.zoom.Zoom -y
+  flatpak install flathub com.vivaldi.Vivaldi -y
   flatpak install flathub org.libreoffice.LibreOffice -y
   
-  # Fix for zoom flatpak
-  flatpak override --env=ZYPAK_ZYGOTE_STRATEGY_SPAWN=0 us.zoom.Zoom
-  
+ 
   reboot
 else
   echo "Powerwashing Cancelled!"
