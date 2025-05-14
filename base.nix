@@ -25,9 +25,9 @@ let
     set -eu
     
     # Update nixbook configs
-    ${pkgs.git}/bin/git -C /etc/nixbook reset --hard
-    ${pkgs.git}/bin/git -C /etc/nixbook clean -fd
-    ${pkgs.git}/bin/git -C /etc/nixbook pull --rebase
+    ${pkgs.git}/bin/git -C /etc/cosmix-saigon reset --hard
+    ${pkgs.git}/bin/git -C /etc/cosmix-saigon clean -fd
+    ${pkgs.git}/bin/git -C /etc/cosmix-saigon pull --rebase
 
     currentChannel=$(${pkgs.nix}/bin/nix-channel --list | ${pkgs.gnugrep}/bin/grep '^nixos' | ${pkgs.gawk}/bin/awk '{print $2}')
     targetChannel="${nixChannel}"
@@ -139,9 +139,6 @@ in
       ${notifyUsersScript} "Starting System Updates" "System updates are installing in the background.  You can continue to use your computer while these are running."
             
       ${pkgs.coreutils-full}/bin/nice -n 19 ${pkgs.util-linux}/bin/ionice -c 3 ${pkgs.nixos-rebuild}/bin/nixos-rebuild boot --upgrade
-
-      # Fix for zoom flatpak
-      ${pkgs.flatpak}/bin/flatpak override --env=ZYPAK_ZYGOTE_STRATEGY_SPAWN=0 us.zoom.Zoom
 
       ${notifyUsersScript} "System Updates Complete" "Updates are complete!  Simply reboot the computer whenever is convenient to apply updates."
     '';
