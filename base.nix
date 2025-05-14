@@ -45,11 +45,17 @@ in
   '';
   # Kernel
   boot.kernelPackages =  pkgs.linuxPackages_latest;
-  
-# Cosmic Desktop Environment.
+
+  # Cosmic Desktop Environment.
   services.displayManager.cosmic-greeter.enable = true;
   services.desktopManager.cosmic.xwayland.enable = true;
   services.desktopManager.cosmic.enable = true;
+  
+  # GTK themes in Wayland
+  programs.dconf.enable = true;
+
+  # Enable firewall
+  networking.firewall.enable = true;
   
   # Enable Printing
   services.printing.enable = true;
@@ -61,14 +67,17 @@ in
 
   environment.systemPackages = with pkgs; [
     cosmic-ext-tweaks
-    git
-    libnotify
-    gawk
-    gnugrep
-    sudo
+    eza
     fastfetch
     flatpak
+    gawk
+    git
+    gnugrep
     htop
+    libnotify
+    mc
+    micro
+    sudo
     vim
     xdg-desktop-portal
     xdg-desktop-portal-cosmic
@@ -76,11 +85,18 @@ in
 
   services.flatpak.enable = true;
 
-  nix.gc = {
-    automatic = true;
-    dates = "Mon 3:40";
-    options = "--delete-older-than 30d";
+  # Garbage collector
+  nix = {
+   gc = {
+     automatic = true;
+     options = "--delete-older-than 15d";
+   };
   };
+  
+  # Shorten shutdown timer  
+  systemd.extraConfig = ''
+    DefaultTimeoutStopSec=5s
+  '';
   
   # Auto update config, flatpak and channel
   systemd.timers."auto-update-config" = {
