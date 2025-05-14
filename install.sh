@@ -12,13 +12,13 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   mkdir ~/Pictures
   mkdir ~/.local
   mkdir ~/.local/share
-  cp -R /etc/nixbook/config/config ~/.config
-  cp /etc/nixbook/config/desktop/* ~/Desktop/
-  cp -R /etc/nixbook/config/applications ~/.local/share/applications
+  cp -R /etc/cosmix-saigon/config/config ~/.config
+  cp /etc/cosmix-saigon/config/desktop/* ~/Desktop/
+  cp -R /etc/cosmix-saigon/config/applications ~/.local/share/applications
 
   # The rest of the install should be hands off
   # Add Nixbook config and rebuild
-  sudo sed -i '/hardware-configuration\.nix/a\      /etc/nixbook/base.nix' /etc/nixos/configuration.nix
+  sudo sed -i '/hardware-configuration\.nix/a\      /etc/cosmix-saigon/base.nix' /etc/nixos/configuration.nix
   
   # Set up flathub repo while we have sudo
   nix-shell -p flatpak --run 'sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo'
@@ -27,13 +27,9 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
 
   # Add flathub and some apps
   flatpak install flathub com.vivaldi.Vivaldi -y
-  flatpak install flathub com.google.Chrome -y
-  flatpak install flathub us.zoom.Zoom -y
   flatpak install flathub org.libreoffice.LibreOffice -y
   
-  # Fix for zoom flatpak
-  flatpak override --env=ZYPAK_ZYGOTE_STRATEGY_SPAWN=0 us.zoom.Zoom
-  
+
   reboot
 else
   echo "Cosmix-Saigon Install Cancelled!"
