@@ -68,38 +68,34 @@ cd cosmix-saigon
 
 ### Enjoy Cosmix Saigon!
 
-### Tips
+### Notes:
 
 You can always manually run updates by running **updates** manually:
-```
-cd /etc/cosmix-saigon
-./update.sh  **or** ./update_shutdown.sh
 
----
+        cd /etc/cosmix-saigon
+        
+        ./update.sh  **or** ./update_shutdown.sh
+
+If you want to completely reset this nixbook, wipe off your personal data to give it to someone else, or start fresh, run **powerwash**:
+
+        cd /etc/cosmix-saigon
+
+        ./powerwash.sh
 
 
-
-Notes:
 - The Nix channel will be updated from this git config once tested, and will auto apply to your machine within a week, on Monday
 - Simply reboot for OS updates to apply.
 - Don't modify the .nix files in this repo, as they'll get overwritten on update.  If you want to customize, put your nix changes directly into /etc/nixos/configuration.nix
 
----
+If at any point you're having issues with your nixbook not updating, check the auto-update-config service by running: 
 
-If at any point you're having issues with your nixbook not updating, check the auto-update-config service by running 
-
-```
-sudo systemctl status auto-update-config
-```
-
+        sudo systemctl status auto-update-config
+        
 If it shows any errors, go directly to /etc/nixbook and run
 
-```
-sudo git pull --rebase
-```
+        sudo git pull --rebase
 
 Then you can start the autoupdate service again by running
 
-```
-sudo systemctl status auto-update-config
-```
+        sudo systemctl status auto-update-config
+
