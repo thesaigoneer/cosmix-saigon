@@ -25,8 +25,7 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   sudo nixos-rebuild switch
 
   # Add flathub and some apps
-  flatpak install flathub com.vivaldi.Vivaldi -y
-  flatpak install flathub org.libreoffice.LibreOffice -y
+  flatpak install flathub com.github.tchx84.Flatseal -y
   
 
   reboot
