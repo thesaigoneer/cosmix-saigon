@@ -20,7 +20,7 @@ There are some fundamental changes compared to the NixBook project:
         * All other applications can be installed through the Cosmic store or the terminal
 
 
-#### Cosmix-Saigon basically takes the automation part of the NixBook project and is still 'set-and-forget'; automagically flatpaks will be updated daily and NixOS will be updated once a week.
+#### Cosmix-Saigon basically takes the automation part of the NixBook project and is still 'set-and-forget'; flatpaks will be updated daily and NixOS will be updated once a week.
 
 
 ### Step 1:  
