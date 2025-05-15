@@ -68,7 +68,7 @@ cd cosmix-saigon
 
 ### Enjoy Cosmix Saigon!
 
-### Notes:
+## Notes:
 
 You can always manually run updates by running **updates** manually:
 
@@ -99,3 +99,12 @@ Then you can start the autoupdate service again by running
 
         sudo systemctl status auto-update-config
 
+--------------
+### Yada yada
+
+Feel free to use these builds and dots. I do not, however, offer or imply any form of support or ongoing maintenance. 
+
+And of course, you use them entirely at your own risk. Have fun!
+
+
+15-05-2025
