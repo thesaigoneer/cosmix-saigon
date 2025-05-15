@@ -35,12 +35,9 @@ Cosmix-Saigon is still a 'set-and-forget'
 
 ### Step 4:  
 
-        Reboot, login, and connect to wifi, then hit ESC
+        Reboot, login, and connect to the network
 
-```
-nmtui
-```
-### Step 5:
+### Step 5
 
 To get the latest version of Cosmic and the kernel we have to switch channel, as root:
 
@@ -71,12 +68,13 @@ cd cosmix-saigon
 
 ### Step 9:  Enjoy Cosmix Saigon!
 
-You can always manually run updates by running **Update and Reboot**:
+You can always manually run updates by running **updates** manually:
 ```
 cd /etc/cosmix-saigon
-./update.sh  or ./update_shutdown.sh
+./update.sh  **or** ./update_shutdown.sh
+---
 
-If you want to completely reset this nixbook, wipe off your personal data to give it to someone else, or start fresh, run **Powerwash**:
+If you want to completely reset this nixbook, wipe off your personal data to give it to someone else, or start fresh, run **powerwash**:
 ```
 cd /etc/cosmix-saigon
 ./powerwash.sh
@@ -87,7 +85,6 @@ Notes:
 - The Nix channel will be updated from this git config once tested, and will auto apply to your machine within a week, on Monday
 - Simply reboot for OS updates to apply.
 - Don't modify the .nix files in this repo, as they'll get overwritten on update.  If you want to customize, put your nix changes directly into /etc/nixos/configuration.nix
-
 
 ---
 
