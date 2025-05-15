@@ -72,7 +72,6 @@ You can always manually run updates by running **updates** manually:
 ```
 cd /etc/cosmix-saigon
 ./update.sh  **or** ./update_shutdown.sh
-
 ---
 
 If you want to completely reset this nixbook, wipe off your personal data to give it to someone else, or start fresh, run **powerwash**:
