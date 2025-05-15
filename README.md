@@ -1,8 +1,6 @@
 ## Cosmix-Saigon
 
-In my series of composables I introduce **Cosmix Saigon**, NixOS with the Cosmic DE on top. 
-
-#### Nothing of this would be even remotely possible without the fantastic NixBook project by Mike Kelly, which you can find at https://github.com/mkellyxp/nixbook
+#### Nothing of this would be even remotely possible for me without the fantastic NixBook project by Mike Kelly, which you can find at https://github.com/mkellyxp/nixbook
 
 ![nixbook os logo](https://github.com/user-attachments/assets/8511e040-ebf0-4090-b920-c051b23fcc9c)
 
