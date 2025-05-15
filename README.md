@@ -13,11 +13,11 @@ Cosmix Saigon is more aimed at the intermediate to experienced user, using the C
 
 There are some fundamental changes compared to the NixBook project:
 
--        The main DE is not Cinnamon, but the Cosmic desktop
--        Cosmix uses the nixos-unstable channel and the latest kernel, to provide the latest and greatest
--        Chrome, Libreoffice and Zoom are not installed ootb; Firefox is also removed from the base install
--        Cosmic-tweaks, eza, fastfetch, htop, mc, micro and vim are added, as well as the Flatseal flatpak
--        All other applications can be installed through the Cosmic store or the terminal
+        The main DE is not Cinnamon, but the Cosmic desktop
+        Cosmix uses the nixos-unstable channel and the latest kernel, to provide the latest and greatest
+        Chrome, Libreoffice and Zoom are not installed ootb; Firefox is also removed from the base install
+        Cosmic-tweaks, eza, fastfetch, htop, mc, micro and vim are added, as well as the Flatseal flatpak
+        All other applications can be installed through the Cosmic store or the terminal
 
 
 Cosmix-Saigon is still a 'set-and-forget' project; automagically flatpaks will be updated daily and NixOS will be updated once a week
