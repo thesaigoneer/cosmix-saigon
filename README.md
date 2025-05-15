@@ -11,6 +11,15 @@ It's goal is to create a "chromebook like" unbreakable computer to give to basic
 
 Cosmix Saigon is more aimed at the intermediate to experienced user, using the Cosmic desktop environment, changing channels and using the latest kernel.
 
+There are some changes compared to the NixBook project:
+
+        -        Chrome and Zoom are not installed ootb; Firefox is also removed from the base install
+        -        Fastfetch, htop and Vim are added (among others)
+        -        The main DE is not Cinnamon, but the Cosmic desktop
+        -        Cosmix uses the nixos-unstable channel and the latest kernel, to provide the latest and greatest
+
+Cosmix-Saigon is still a 'set-and-forget' 
+
 
 ### Step 1:  
         
@@ -33,11 +42,11 @@ nmtui
 ```
 ### Step 5:
 
-To get the latest version of Cosmic and the kernel we have to switch channel:
+To get the latest version of Cosmic and the kernel we have to switch channel, as root:
 
     nix-channel --add https://channels.nixos.org/nixos-unstable nixos
 
-You can then upgrade NixOS to the latest version in your chosen channel by running:
+You can then upgrade NixOS to the latest version in your chosen channel by running as root:
 
     nixos-rebuild switch --upgrade
 
@@ -48,7 +57,6 @@ Reboot & login again
 cd /etc/
 nix-shell -p git
 ```
-
 
 ### Step 7:  Clone the nixbook repo  (make sure you run as sudo and you're in /etc!)
 ```
@@ -63,14 +71,20 @@ cd cosmix-saigon
 
 ### Step 9:  Enjoy Cosmix Saigon!
 
-You can always manually run updates by running **Update and Reboot** in the menu.
+You can always manually run updates by running **Update and Reboot**:
+```
+cd /etc/cosmix-saigon
+./update.sh  or ./update_shutdown.sh
 
-If you want to completely reset this nixbook, wipe off your personal data to give it to someone else, or start fresh, run **Powerwash** from the menu.
+If you want to completely reset this nixbook, wipe off your personal data to give it to someone else, or start fresh, run **Powerwash**:
+```
+cd /etc/cosmix-saigon
+./powerwash.sh
 
 ---
 
 Notes:
-- The Nix channel will be updated from this git config once tested, and will auto apply to your machine within a week
+- The Nix channel will be updated from this git config once tested, and will auto apply to your machine within a week, on Monday
 - Simply reboot for OS updates to apply.
 - Don't modify the .nix files in this repo, as they'll get overwritten on update.  If you want to customize, put your nix changes directly into /etc/nixos/configuration.nix
 
