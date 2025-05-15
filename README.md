@@ -1,8 +1,8 @@
 ## Cosmix-Saigon
 
-In my series of composables I introduce Cosmix Saigon, NixOS with the Cosmic DE on top. 
+In my series of composables I introduce **Cosmix Saigon**, NixOS with the Cosmic DE on top. 
 
-### Nothing of this would be even remotely possible without the fantastic NixBook project by Mike Kelly, which you can find at https://github.com/mkellyxp/nixbook
+## Nothing of this would be even remotely possible without the fantastic NixBook project by Mike Kelly, which you can find at https://github.com/mkellyxp/nixbook
 
 ![nixbook os logo](https://github.com/user-attachments/assets/8511e040-ebf0-4090-b920-c051b23fcc9c)
 
@@ -11,12 +11,14 @@ It's goal is to create a "chromebook like" unbreakable computer to give to basic
 
 Cosmix Saigon is more aimed at the intermediate to experienced user, using the Cosmic desktop environment, changing channels and using the latest kernel.
 
-There are some changes compared to the NixBook project:
+There are some fundamental changes compared to the NixBook project:
 
-        -        Chrome and Zoom are not installed ootb; Firefox is also removed from the base install
-        -        Eza, fastfetch, htop, mc, micro and vim are added, as well as the Vivaldi and Flatseal flatpaks
         -        The main DE is not Cinnamon, but the Cosmic desktop
         -        Cosmix uses the nixos-unstable channel and the latest kernel, to provide the latest and greatest
+        -        Chrome, Libreoffice and Zoom are not installed ootb; Firefox is also removed from the base install
+        -        Cosmic-tweaks, eza, fastfetch, htop, mc, micro and vim are added, as well as the Flatseal flatpak
+        -        All other applications can be installed through the Cosmic store or the terminal
+
 
 Cosmix-Saigon is still a 'set-and-forget' project; automagically flatpaks will be updated daily and NixOS will be updated once a week
 
