@@ -55,7 +55,7 @@ cd /etc/
 nix-shell -p git
 ```
 
-### Step 7:  Clone the nixbook repo  (make sure you run as sudo and you're in /etc!)
+### Step 7:  Clone the Cosmix repo  (make sure you run as sudo and you're in /etc!)
 ```
 sudo git clone https://github.com/thesaigoneer/cosmix-saigon
 ```
@@ -73,6 +73,7 @@ You can always manually run updates by running **updates** manually:
 cd /etc/cosmix-saigon
 ./update.sh  **or** ./update_shutdown.sh
 ---
+
 
 If you want to completely reset this nixbook, wipe off your personal data to give it to someone else, or start fresh, run **powerwash**:
 ```
