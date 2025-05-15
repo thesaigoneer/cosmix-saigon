@@ -74,6 +74,7 @@ You can always manually run updates by running **updates** manually:
 ```
 cd /etc/cosmix-saigon
 ./update.sh  **or** ./update_shutdown.sh
+
 ---
 
 
